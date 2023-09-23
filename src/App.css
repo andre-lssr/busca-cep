@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#121212, #212b46);
+}
+
+.title {
+  font-size: 85px;
+  color: white;
+  animation: flipTitle 1.5s;
+}
+
+@keyframes flipTitle {
+  from {
+    transform: rotateX(90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.containerInput {
+  background-color: #212b46;
+  padding: 15px;
+  display: flex;
+  margin: 34px 0;
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px color(xyz-d50 red green blue);
+}
+
+.containerInput input {
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  color: aliceblue;
+  outline: none;
+  margin-right: 8px;
+}
+
+.containerInput input::placeholder {
+  color: #f1f1f1;
+  opacity: 20%;
+}
+
+.find {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s;  
+}
+
+.find:hover {
+  transform: scale(1.2);
+}
+
+.logradouro {
+  width: 500px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0px;
+}
+
+.bairro {
+  width: 500px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.localidade {
+  width: 500px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.uf {
+  width: 500px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.main {
+  color: #121212;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.main h2 {
+  margin: 16px 0;
+  font-size: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main span {
+  font-weight: bold;
+}
