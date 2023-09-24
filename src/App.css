@@ -15,16 +15,16 @@
 }
 
 .title {
-  font-size: 85px;
-  color: white;
+  font-size: 50px;
+  color: #f1f1f1;
   animation: flipTitle 1.5s;
+  user-select: none;
 }
 
 @keyframes flipTitle {
   from {
     transform: rotateX(90deg);
   }
-
   to {
     transform: rotateX(0deg);
   }
@@ -60,7 +60,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: transform 0.5s;  
+  transition: transform 0.5s;
 }
 
 .find:hover {
@@ -69,35 +69,48 @@
 
 .logradouro {
   width: 500px;
-  height: 30px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   display: flex;
   margin: 0px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin: 14px 0px 14px 0px;
+
 }
 
 .bairro {
   width: 500px;
-  height: 30px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   display: flex;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin: 14px 0px 14px 0px;
 }
 
 .localidade {
   width: 500px;
-  height: 30px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   display: flex;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin: 14px 0px 14px 0px;
 }
 
 .uf {
   width: 500px;
-  height: 30px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   display: flex;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin: 14px 0px 14px 0px;
 }
 
 .main {
@@ -105,19 +118,41 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #f1f1f1;
   width: 500px;
   border-radius: 8px;
+
 }
 
 .main h2 {
   margin: 16px 0;
-  font-size: 39px;
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: aliceblue;
 }
 
 .main span {
   font-weight: bold;
+}
+
+
+.cb {
+  transition: transform 0.3s;
+  margin-left: 5px;
+}
+
+.cb:hover {
+  transform: scale(1.2);
+  color: cadetblue;
+}
+
+.bCopy{
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s;
 }
